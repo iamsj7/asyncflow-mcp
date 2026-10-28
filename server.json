@@ -1,0 +1,12 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "om.async/asyncflow",
+  "title": "AsyncFlow",
+  "description": "Search, open, create, update, assign, move and comment on your AsyncFlow tickets.",
+  "version": "4.1.0",
+  "websiteUrl": "https://flow.async.om",
+  "repository": { "url": "https://github.com/iamsj7/asyncflow-mcp", "source": "github" },
+  "remotes": [
+    { "type": "streamable-http", "url": "https://flow.async.om/api/mcp" }
+  ]
+}

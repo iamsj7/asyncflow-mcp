@@ -1,0 +1,14 @@
+{
+  "name": "asyncflow",
+  "owner": { "name": "Async Solution", "url": "https://asyncsolution.com" },
+  "metadata": { "description": "The AsyncFlow connector for Claude Code." },
+  "plugins": [
+    {
+      "name": "asyncflow",
+      "source": "./",
+      "description": "Work with your AsyncFlow tickets from Claude Code.",
+      "version": "4.1.0",
+      "category": "productivity"
+    }
+  ]
+}

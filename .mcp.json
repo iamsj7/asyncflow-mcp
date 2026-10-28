@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "asyncflow": {
+      "type": "http",
+      "url": "https://flow.async.om/api/mcp"
+    }
+  }
+}
