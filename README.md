@@ -69,7 +69,7 @@ address to [Async Solution](https://asyncsolution.com) and it will be added.
 |---|---|
 | See the company and its workspaces | `whoami`, `list_projects` |
 | Read tickets you can already read | `list_ticket_options`, `search_tickets` (board filters: created or resolved dates, due, assigned to me, SLA and more), `get_tickets`, `get_ticket`, `get_ticket_history`, `workspace_summary`, `get_attachment` (images are shown to the chat) |
-| Create and manage tickets | `create_ticket`, `update_ticket` (any field, parent), `assign_ticket`, `transition_ticket`, `link_tickets`, `unlink_tickets`, `request_approval`, `decide_approval`, `log_time`, `upload_attachment`, `start_upload`, `attach_file`, `remove_attachment` |
+| Create and manage tickets | `create_ticket`, `update_ticket` (any field, parent), `assign_ticket`, `transition_ticket`, `link_tickets`, `unlink_tickets`, `request_approval`, `decide_approval`, `log_time`, `upload_attachment`, `start_upload`, `attach_file`, `remove_attachment`, `archive_tickets`, `restore_tickets`, `list_archived_tickets` |
 | Add comments | `add_comment` (with files) |
 
 Your role in each workspace still applies, and the chat can't delete anything.

@@ -58,10 +58,18 @@ another way.
   `fileId`) and the file's exact name as `confirmFileName`. Only the uploader or
   a project admin can. It cannot be undone, so name the file and get a yes first.
 
+## Archiving
+
+- `archive_tickets` takes the ticket ids and `confirmCount`, the number of
+  tickets. Archived tickets leave search and every other tool until restored;
+  nothing is deleted. List the tickets by number and get a yes first.
+- `list_archived_tickets` shows what is archived; `restore_tickets` brings
+  tickets back. Permanent deletion is not available from chat.
+
 ## Changing tickets
 
 - **Say what you'll change and get a yes before** any write: create, update,
-  transition, assign, link, approve, log time, comment, upload or remove a file.
+  transition, assign, link, approve, log time, comment, upload, remove a file, archive or restore.
 - Updates, transitions, assignments and links need `expectedRevision` from the
   latest `get_ticket`. If a write fails because the revision changed, read the
   ticket again and show the person what changed before you retry.

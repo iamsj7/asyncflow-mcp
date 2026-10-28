@@ -1,6 +1,6 @@
 {
   "name": "asyncflow",
-  "version": "4.4.0",
+  "version": "4.5.0",
   "description": "Work with your AsyncFlow tickets from Claude Code: search, open, create, update, assign, move and comment, limited to one company and the access you allow.",
   "author": { "name": "Async Solution", "url": "https://asyncsolution.com" },
   "homepage": "https://flow.async.om",
