@@ -3,7 +3,7 @@
   "name": "om.async/asyncflow",
   "title": "AsyncFlow",
   "description": "Search, open, create, update, assign, move and comment on your AsyncFlow tickets.",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "websiteUrl": "https://flow.async.om",
   "repository": { "url": "https://github.com/iamsj7/asyncflow-mcp", "source": "github" },
   "remotes": [

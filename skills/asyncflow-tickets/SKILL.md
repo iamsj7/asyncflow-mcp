@@ -17,9 +17,13 @@ another way.
 2. `list_projects` lists the workspaces. Every other tool needs a `projectId` from here.
 3. `list_ticket_options` gives the ticket types, priorities, statuses and
    assignable people for one workspace. Use its ids; never guess one.
-4. `search_tickets` returns a page of tickets. Pass `nextCursor` to get more.
-5. `get_ticket` returns the ticket, its recent comments, its file names, its
-   `revision` and its allowed `transitions`.
+4. `search_tickets` returns a page of tickets with title, status, priority and
+   module. Pass `nextCursor` to get more. Answer from these rows when you can.
+5. `get_tickets` reads up to 20 tickets in **one call**, with their descriptions
+   and newest comments. To read, compare or summarise several tickets, use it
+   with the ids from the search; never call `get_ticket` once per ticket.
+6. `get_ticket` returns one ticket in full: its newest comments, file names,
+   `revision` and allowed `transitions`. Use it on the ticket you're about to change.
 
 ## Changing a ticket
 

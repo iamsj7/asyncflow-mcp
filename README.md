@@ -68,7 +68,7 @@ address to [Async Solution](https://asyncsolution.com) and it will be added.
 | Access | What the chat can do |
 |---|---|
 | See the company and its workspaces | `whoami`, `list_projects` |
-| Read tickets you can already read | `list_ticket_options`, `search_tickets`, `get_ticket` |
+| Read tickets you can already read | `list_ticket_options`, `search_tickets`, `get_tickets`, `get_ticket` |
 | Create, edit, assign and move tickets | `create_ticket`, `update_ticket`, `assign_ticket`, `transition_ticket` |
 | Add comments | `add_comment` |
 
