@@ -1,6 +1,6 @@
 ---
 name: asyncflow-tickets
-description: Use when the user asks about their AsyncFlow tickets, workspaces or UAT issues, or wants to find, read, create, update, assign, move, link, approve, log time on, comment on, or attach files to a ticket through the asyncflow connector.
+description: Use when the user asks about their AsyncFlow tickets, workspaces or UAT issues, or wants to find, read, create, update, assign, move, link, approve, log time on, comment on, or attach or remove files on a ticket through the asyncflow connector.
 ---
 
 # Working with AsyncFlow tickets
@@ -39,8 +39,9 @@ another way.
 
 ## Files and images
 
-- `get_attachment` opens a file by id: `attachments[].id`, `comments[].files[].id`,
-  or the ids in `descriptionImages` and `comments[].images`, which are images
+- `get_attachment` opens a file by its file id: `attachments[].fileId`,
+  `comments[].files[].fileId`, or the ids in `descriptionImages` and
+  `comments[].images`, which are images
   pasted into the text. Images come back as images you can look at, so open
   them when the person asks what a screenshot shows.
 - To add a file:
@@ -52,11 +53,15 @@ another way.
   - Pass `ticketId` to attach the file straight away, or pass the returned
     `fileId` in `fileIds` on `create_ticket` or `add_comment`.
   - AsyncFlow accepts images, PDF and Microsoft Office files only.
+- `remove_attachment` removes a file from a ticket or comment. It takes the
+  attachment id (`attachments[].id` or `comments[].files[].id`, not the
+  `fileId`) and the file's exact name as `confirmFileName`. Only the uploader or
+  a project admin can. It cannot be undone, so name the file and get a yes first.
 
 ## Changing tickets
 
 - **Say what you'll change and get a yes before** any write: create, update,
-  transition, assign, link, approve, log time, comment or upload.
+  transition, assign, link, approve, log time, comment, upload or remove a file.
 - Updates, transitions, assignments and links need `expectedRevision` from the
   latest `get_ticket`. If a write fails because the revision changed, read the
   ticket again and show the person what changed before you retry.
