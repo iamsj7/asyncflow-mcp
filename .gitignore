@@ -1,0 +1,3 @@
+# Registry signing key for the om.async namespace: never commit it.
+*.pem
+.mcpregistry_*
