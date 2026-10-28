@@ -68,12 +68,20 @@ address to [Async Solution](https://asyncsolution.com) and it will be added.
 | Access | What the chat can do |
 |---|---|
 | See the company and its workspaces | `whoami`, `list_projects` |
-| Read tickets you can already read | `list_ticket_options`, `search_tickets`, `get_tickets`, `get_ticket` |
-| Create, edit, assign and move tickets | `create_ticket`, `update_ticket`, `assign_ticket`, `transition_ticket` |
-| Add comments | `add_comment` |
+| Read tickets you can already read | `list_ticket_options`, `search_tickets` (board filters: created or resolved dates, due, assigned to me, SLA and more), `get_tickets`, `get_ticket`, `get_ticket_history`, `workspace_summary`, `get_attachment` (images are shown to the chat) |
+| Create and manage tickets | `create_ticket`, `update_ticket` (any field, parent), `assign_ticket`, `transition_ticket`, `link_tickets`, `unlink_tickets`, `request_approval`, `decide_approval`, `log_time`, `upload_attachment`, `start_upload`, `attach_file` |
+| Add comments | `add_comment` (with files) |
 
 Your role in each workspace still applies, and the chat can't delete anything.
-Files are listed by name only. To open them, use the AsyncFlow website.
+Due dates and other planning fields stay visible to the delivery team only.
+
+## Microsoft Teams and Microsoft 365 Copilot
+
+In Copilot Studio, create an agent, add a tool of type **Model Context
+Protocol** with the address above and **OAuth 2.0, dynamic discovery**, and
+publish it to the **Teams and Microsoft 365 Copilot** channel. Copilot Studio
+shows a callback URL: send it to [Async Solution](https://asyncsolution.com)
+so it can be allowed.
 
 ## Licence
 
