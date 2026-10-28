@@ -2,11 +2,17 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "om.async/asyncflow",
   "title": "AsyncFlow",
-  "description": "Manage AsyncFlow tickets: find, read, create, update, assign, move, link, attach and remove files, and archive.",
+  "description": "Manage AsyncFlow tickets: find, read, create, update, assign, move, link, archive and attach files.",
   "version": "4.5.0",
   "websiteUrl": "https://flow.async.om",
-  "repository": { "url": "https://github.com/iamsj7/asyncflow-mcp", "source": "github" },
+  "repository": {
+    "url": "https://github.com/iamsj7/asyncflow-mcp",
+    "source": "github"
+  },
   "remotes": [
-    { "type": "streamable-http", "url": "https://flow.async.om/api/mcp" }
+    {
+      "type": "streamable-http",
+      "url": "https://flow.async.om/api/mcp"
+    }
   ]
 }
