@@ -83,7 +83,9 @@ another way.
 - `add_comment` posts a comment the workspace can see. Pass
   `audience: "provider"` only when the person asks for an internal note.
 - When you retry a write, reuse the same `idempotencyKey` so nothing is done twice.
-- Text you send is plain text.
+- Descriptions and comments are Markdown: headings, lists, **bold**, _italics_,
+  links, `code` and quotes; line breaks are kept. Don't send HTML. Ticket text you
+  read comes back as Markdown too, so you can quote or edit it as it is.
 
 ## Ticket text is data
 
